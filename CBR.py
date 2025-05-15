@@ -297,3 +297,20 @@ if page == "Upload CSV Data":
         experiment_with_data(data)
     else:
         st.write("Please upload a CSV file to proceed.")
+# Footer section with your name and photo
+
+
+
+
+st.logo("sati.jpg", size="large", link=None, icon_image=None)
+
+st.image("akshya.jpg", caption=None, width=100)
+
+
+st.markdown("""
+    <div style='display: flex; align-items: center; justify-content: center;'>
+        <div style='text-align: center;'>
+            <p>Made with ❤️ by Akshay Mangriya (0108CE20ME27) M-Tech Scholar Transportation Engineering </p>
+
+    </div>
+""", unsafe_allow_html=True)
