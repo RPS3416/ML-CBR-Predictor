@@ -297,20 +297,47 @@ if page == "Upload CSV Data":
         experiment_with_data(data)
     else:
         st.write("Please upload a CSV file to proceed.")
-# Footer section with your name and photo
+
+
+
+# Now you can use other Streamlit commands
+st.logo("sati.jpg", size="large")
+
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.image("akshya.jpg")
+    st.markdown("""
+        <div style='text-align: center;'>
+            <h3>Akshay Mangriya</h3>
+            <p><strong>M-Tech Scholar</strong></p>
+            <p>Transportation Engineering</p>
+            <p> 0108CE20ME27</p>
+        </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.image("sample_soil.jpg", caption="Soil Testing")
+
+with col3:
+    st.image("civil_engineer.jpg", caption="Civil Engineering")
+
+
+st.image("college.jpg", caption="College Campus - SATI")
 
 
 
 
-st.logo("sati.jpg", size="large", link=None, icon_image=None)
-
-st.image("akshya.jpg", caption=None, width=100)
-
+# Balloons animation
+st.balloons()
 
 st.markdown("""
-    <div style='display: flex; align-items: center; justify-content: center;'>
-        <div style='text-align: center;'>
-            <p>Made with ❤️ by Akshay Mangriya (0108CE20ME27) M-Tech Scholar Transportation Engineering </p>
-
-    </div>
+<hr>
+<div style='text-align: center; color: gray; font-size: 14px;'>
+    <p>Made with <strong>Akshay Mangriya</strong></p>
+    <p>| M-Tech Scholar, Transportation Engineering |</p>
+    <h6> 0108CE20ME27 </h6> 
+</div>
 """, unsafe_allow_html=True)
+
